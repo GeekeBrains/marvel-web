@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MARVEL's WEB
 
-## Getting Started
+Web que muestra los personajes de Marvel en una grid con busqueda por nombre, donde se pueden seleccionar los favoritos y localizarlos posteriormente. 
+Tambien tiene una página de detalle del personaje, donde se pueden ver los comics donde aparece.
+Los datos se obtienen de la api de Marvel. 
 
-First, run the development server:
+## Instalación
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Clonar el repositorio en local:
+
+```
+> git clone https://github.com/.../marvel-web.git
+> cd marvel-web
+> npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Arraque en modo Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+> npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Esto inicia el servidor y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
 
-## Learn More
+## Arranque en modo Producción:
 
-To learn more about Next.js, take a look at the following resources:
+```
+> npm run build
+> npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Esto iniciará el servidor de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Testing
+Se han realizado algunos test. Se pueden ejecutar con:
 
-## Deploy on Vercel
+```
+> npm run test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notas
+Se utilizan Linters y Prettier para formatear el código.
+Para los estilos se utiliza Sass y styled-components para las animaciones.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

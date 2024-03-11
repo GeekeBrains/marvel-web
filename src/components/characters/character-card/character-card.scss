@@ -1,0 +1,60 @@
+@use '@/styles/colors' as colors;
+@use '@/styles/config' as config;
+
+.character-card {
+  width: 172.5px;
+
+  @media only screen and (min-width: config.$mobileMaxWith) {
+    width: 188.57px;
+  }  
+
+  .character-card-image {
+    border-bottom: 4px solid colors.$marvelRed;
+    height: 189.97px;
+    width: 172.5px;
+
+    @media only screen and (min-width: config.$mobileMaxWith) {
+      width: 188.57px;
+    }  
+  }
+
+  .character-card-footer {
+    height: 56px;
+    width: 172.5px;
+
+    @media only screen and (min-width: config.$mobileMaxWith) {
+      width: 188.57px;
+    }  
+  
+    margin-top: -5px;
+    clip-path: polygon(100% 0%, 100% 70%, 90% 100%, 0 100%, 0 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .front {
+      z-index: 2;
+    }
+
+    span {
+      width: 108px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: colors.$white;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    // @include mobile {
+    //   width: 172.5px;
+    // }
+  }
+}
+
+// @include mobile {
+//   .character-card:nth-child(even) {
+//     margin: 0px 0px 16px 0px;
+//   }
+// }

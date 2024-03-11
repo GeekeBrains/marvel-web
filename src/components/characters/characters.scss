@@ -1,0 +1,17 @@
+@use '@/styles/config' as config;
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // height: calc(100vh - 120px);
+  margin: 0px config.$mobileLateralMargin;
+
+  @media only screen and (min-width: config.$mobileMaxWith ) and (max-width: config.$desktopMinWith) {
+    margin: 0px config.$desktopLateralMargin;
+  }
+  @media only screen and (min-width: config.$desktopMinWith) {
+    margin: 0px config.$desktopLateralMargin;
+  }
+
+}

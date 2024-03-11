@@ -1,0 +1,38 @@
+@use '@/styles/config' as config;
+@use '@/styles/colors' as color;
+
+
+header {
+  height: 84px;
+  background-color: color.$black;
+  border-bottom: 1px solid color.$darkGrey;
+  z-index: 2;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  @media only screen and (max-width: config.$mobileMaxWith) {
+    padding: 0px config.$mobileLateralMargin;
+  }
+  @media only screen and (min-width: config.$mobileMaxWith ) and (max-width: config.$desktopMinWith) {
+    padding: 0px config.$desktopLateralMargin;
+  }
+  @media only screen and (min-width: config.$desktopMinWith) {
+    padding: 0px config.$desktopLateralMargin;
+  }
+  
+  .header-favorites {
+    width: 42px;
+    background-color: color.$black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span {
+    color: color.$white;
+    font-size: 16px;
+  }
+}

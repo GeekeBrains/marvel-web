@@ -1,0 +1,105 @@
+@use '@/styles/config' as config;
+@use '@/styles/colors' as color;
+
+$mobileMaxWidthLocal: 393px;
+
+.character-page-header {
+	background-color: color.$black;
+
+	.character-page-header-center {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+
+		.character-page-header-wraper {
+			flex-direction: column;
+			display: flex;
+			width: 100%;
+
+			@media only screen and (min-width: $mobileMaxWidthLocal) {
+				justify-content: center;
+				flex-direction: row;
+				max-width: 960px;
+			}
+
+			.character-image {
+				width: 100%;
+				height: auto;
+
+				@media only screen and (min-width: $mobileMaxWidthLocal) {
+					width: 320px;
+					height: 320px;
+				}
+			}
+
+			.character-detail {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				justify-content: flex-start;
+				color: color.$white;
+				margin: 0px;
+				width: calc(100% - 32px);
+
+				padding-top: 24px;
+				padding-left: 16px;
+				padding-right: 16px;
+				padding-bottom: 48px;
+				@media only screen and (min-width: $mobileMaxWidthLocal) and (max-width: config.$desktopMinWith) {
+					width: 100%;
+					padding-top: 79.5px;
+					padding-left: 48px;
+					padding-right: 48px;
+				}
+				@media only screen and (min-width: config.$desktopMinWith) {
+					width: 100%;
+					padding-top: 96px;
+					padding-left: 48px;
+					padding-right: 0;
+				}
+
+				.character-detail-name-heart {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+
+					.character-name {
+						font-size: 32px;
+						font-weight: bold;
+						text-transform: uppercase;
+
+						@media only screen and (min-width: $mobileMaxWidthLocal) {
+							max-height: 47px;
+							overflow: hidden;
+							font-size: 40px;
+						}
+					}
+				}
+				.character-description {
+					margin-top: 30px;
+					font-size: 16px;
+					max-height: 114px;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+
+	.div-con-esquina-cortada {
+		position: relative;
+		padding-bottom: -24px;
+		padding-right: 24px;
+	}
+
+	.div-con-esquina-cortada::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		border-left: 24px solid transparent;
+		border-top: 24px solid color.$white;
+		width: 0;
+		transform: rotate(90deg);
+	}
+}

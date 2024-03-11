@@ -1,0 +1,58 @@
+@use '@/styles/config' as config;
+@use '@/styles/colors' as color;
+
+
+.characters-search {
+  height: 77px;
+  width: 100%;
+  flex: 1;
+  margin-bottom: 12px;
+  @media only screen and (max-width: config.$mobileMaxWith) {
+    margin-top: 24px;    
+  }
+  @media only screen and (min-width: config.$mobileMaxWith ) and (max-width: config.$desktopMinWith) {
+    margin-top: 48px;
+  }
+  @media only screen and (min-width: config.$desktopMinWith) {
+    margin-top: 48px;
+  }
+
+  .favorite-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  label {
+    display: flex;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid color.$black;
+    margin-bottom: 12px;
+
+    img {
+      margin-top: 3.5px;
+    }
+
+    input {
+      margin-left: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      line-height: 18.75px;
+      width: inherit;
+    }
+
+    input::placeholder {
+      color: color.$grey;
+    }
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+}
+
+.fav-maxh {
+  max-height: 140px;
+}
