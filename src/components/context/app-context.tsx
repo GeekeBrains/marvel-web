@@ -1,10 +1,10 @@
 import { createContext } from 'react';
 
-import { DataStateInterface } from '@/model/context-interfaces';
+import { ContextType } from '@/model/context.model';
 import { CharacterType } from '@/model/character.model';
 
 export type AppContextProps = {
-	dataState: DataStateInterface;
+	dataState: ContextType;
 	addSearchCharacters: (characters: CharacterType[]) => void;
 	addFavoriteCharacters: (characters: CharacterType) => void;
 	deleteFavoriteCharacter: (characters: CharacterType) => void;

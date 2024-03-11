@@ -9,7 +9,7 @@ import MarvelLogo from '@/assets/marvel-logo.png';
 import RedHeartIcon from '@/assets/heart-red-icon.png';
 
 import './header.scss';
-import { CharacterTypePageEnum } from '@/model/context-interfaces';
+import { CharacterTypePageEnum } from '@/model/context.model';
 
 export const Header = () => {
 	const { favoritesCharacters, changeCharacterTypePage } = useData();

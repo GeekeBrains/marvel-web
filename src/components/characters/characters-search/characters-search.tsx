@@ -12,7 +12,7 @@ import { CharacterType } from '@/model/character.model';
 import SearchIcon from '@/assets/search-icon.png';
 
 import './characters-search.scss';
-import { CharacterTypePageEnum } from '@/model/context-interfaces';
+import { CharacterTypePageEnum } from '@/model/context.model';
 
 const MAX_CHARACTERS_TO_RETURN = 50;
 const SEARCH_PLACEHOLDER = 'SEARCH A CHARACTER...';

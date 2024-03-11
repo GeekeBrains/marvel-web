@@ -5,7 +5,7 @@ export enum CharacterTypePageEnum {
 	favorites = 'favorites',
 }
 
-export interface DataStateInterface {
+export interface ContextType {
 	searchCharacters: CharacterType[];
 	favoritesCharacters: CharacterType[];
 	characterTypePage: CharacterTypePageEnum;

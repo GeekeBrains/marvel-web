@@ -5,7 +5,7 @@ import { useData } from '@/components/hooks/use-data';
 import './characters-list.scss';
 import { CharacterType } from '@/model/character.model';
 import { useEffect, useState } from 'react';
-import { CharacterTypePageEnum } from '@/model/context-interfaces';
+import { CharacterTypePageEnum } from '@/model/context.model';
 
 const CharacterList = () => {
 	const [characters, setCharacters] = useState<CharacterType[]>([]);

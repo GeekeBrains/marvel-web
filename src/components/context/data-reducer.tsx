@@ -1,6 +1,6 @@
 import { CharacterType } from '@/model/character.model';
-import { DataStateInterface } from '../interfaces/context-interfaces';
-import { CharacterTypePageEnum } from '@/model/context-interfaces';
+import { ContextType } from '@/model/context.model';
+import { CharacterTypePageEnum } from '@/model/context.model';
 
 type DataAction =
 	| { type: 'addSearchCharacters'; payload: CharacterType[] }
@@ -10,7 +10,7 @@ type DataAction =
 	| { type: 'toggleCharacterTypePage' }
 	| { type: 'deleteSearch' };
 
-export const dataReducer = (state: DataStateInterface, action: DataAction): DataStateInterface => {
+export const dataReducer = (state: ContextType, action: DataAction): ContextType => {
 	switch (action.type) {
 		case 'addSearchCharacters':
 			return {
@@ -45,7 +45,7 @@ export const dataReducer = (state: DataStateInterface, action: DataAction): Data
 		case 'changeCharacterTypePage':
 			return {
 				...state,
-				characterTypePage: action.payload,
+				characterTypePage: action.payload as CharacterTypePageEnum,
 			};
 
 		case 'deleteSearch':
