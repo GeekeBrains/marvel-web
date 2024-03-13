@@ -4,6 +4,9 @@ Web que muestra los personajes de Marvel en una grid con busqueda por nombre, do
 Tambien tiene una página de detalle del personaje, donde se pueden ver los comics donde aparece.
 Los datos se obtienen de la api de Marvel. 
 
+La web se puede utilizar en esta ruta: https://main.d3n65a0bv5iudr.amplifyapp.com/
+Esta alojada en AWS con Amplify.
+
 ## Instalación
 
 Clonar el repositorio en local:
