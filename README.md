@@ -4,7 +4,8 @@ Web que muestra los personajes de Marvel en una grid con busqueda por nombre, do
 Tambien tiene una página de detalle del personaje, donde se pueden ver los comics donde aparece.
 Los datos se obtienen de la api de Marvel. 
 
-Se puede visualizar en la ruta http://34.245.129.52/character
+Se puede visualizar en la ruta http://34.245.129.52
+
 Para instalarlo se ha creaco un servidor EC2 con la versión de producción de next y un nginx.
 
 ## Instalación
