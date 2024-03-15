@@ -6,7 +6,7 @@ Los datos se obtienen de la api de Marvel.
 
 Se puede visualizar en la ruta http://34.245.129.52
 
-Para instalarlo se ha creaco un servidor EC2 con la versión de producción de next y un nginx.
+Para instalarlo se ha creado un servidor EC2 con la versión de producción de next y un nginx en AWS.
 
 ## Instalación
 
