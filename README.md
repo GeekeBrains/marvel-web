@@ -6,7 +6,7 @@ Los datos se obtienen de la api de Marvel.
 
 Se puede visualizar en la ruta http://34.245.129.52
 
-Para instalarlo se ha creado un servidor EC2 con la versión de producción de next y un nginx en AWS.
+Para instalarlo se ha creado un servidor EC2 con la versión de producción de next y un nginx en AWS con pm2.
 
 ## Tecnologías
 - NextJs 14
@@ -34,12 +34,12 @@ Esto inicia el servidor y podrás acceder a la aplicación en tu navegador visit
 
 ## Arranque en modo Producción:
 
+Se han añadido estos script que cargaran el next en modo optimizado en el pueto 3000
 ```
 > npm run build
 > npm run start
 ```
 
-Esto iniciará el servidor de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
 
 ## Testing
 Se han realizado algunos test. Se pueden ejecutar con:
