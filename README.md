@@ -8,6 +8,12 @@ Se puede visualizar en la ruta http://34.245.129.52
 
 Para instalarlo se ha creado un servidor EC2 con la versión de producción de next y un nginx en AWS.
 
+## Tecnologías
+NextJs 14
+Node 18
+SASS
+Styled-components
+
 ## Instalación
 
 Clonar el repositorio en local:
