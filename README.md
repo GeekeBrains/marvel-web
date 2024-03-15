@@ -19,7 +19,7 @@ Para instalarlo se ha creado un servidor EC2 con la versión de producción de n
 Clonar el repositorio en local:
 
 ```
-> git clone https://github.com/.../marvel-web.git
+> git clone https://github.com/GeekeBrains/marvel-web.git
 > cd marvel-web
 > npm install
 ```
